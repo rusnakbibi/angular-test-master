@@ -9,8 +9,12 @@ const routes: Routes = [
     component: CollegeComponent
   },
   {
+    path: 'notfound',
+    loadChildren: () => import('./not-found/not-found.module').then(m => m.NotFoundModule)
+  },
+  {
     path: '**',
-    redirectTo: '/notfound'
+    redirectTo: 'notfound'
   }
 ];
 
