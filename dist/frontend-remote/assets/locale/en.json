@@ -1,0 +1,12 @@
+{
+	"college": {
+		"name": "Vinnytsia National Technical University",
+		"about": "Vinnytsia National Technical University is an educational establishment of the fourth level of accreditation well known both in Ukraine and far abroad"
+	},
+	"link": {
+		"about": "About",
+		"courses": "Courses",
+		"teachers": "Teachers",
+		"contacts": "Contacts"
+	}
+}
