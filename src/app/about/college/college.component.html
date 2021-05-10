@@ -1,0 +1,44 @@
+<main *ngIf="college">
+  <section class="content-menu content-menu-border">
+    <div class="select-section">
+      <select class="custom-select" (change)="changeLocale()" [(ngModel)]="selectedLanguage">
+        <option *ngFor="let language of languages" [value]="language.id">{{ language.title }}</option>
+      </select>
+    </div>
+    <div class="container header-block">
+      <div class="info-header mt-5 mt-lg-0">
+        <div class="logo-block ml-4 pl-3">
+          <img class="img" [src]="college.photo" alt="college-photo" />
+        </div>
+        <h1>{{ 'college.name' | translate }}</h1>
+      </div>
+      <div class="row">
+        <nav class="d-sm-flex">
+          <ul class="no-wrap">
+            <li>
+              <a [routerLink]="['/about']">{{'link.about' | translate}}</a>
+            </li>
+            <li>
+              <a [routerLink]="['/courses']">{{'link.courses' | translate}}</a>
+            </li>
+            <li>
+              <a [routerLink]="['/teachers']">{{'link.teachers' | translate}}</a>
+            </li>
+            <li>
+              <a [routerLink]="['/contacts']">{{'link.contacts' | translate}}</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <section class="information pt-0">
+    <div class="container">
+      <div class="row ">
+        <div class="col-12 col-lg-12 description">
+          <div [innerHTML]="'college.about' | translate" class="college-description"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
