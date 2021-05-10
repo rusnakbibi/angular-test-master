@@ -6,7 +6,7 @@ import { TranslateService } from '@ngx-translate/core';
 
 import { COLLEGE_ABOUT$ } from '../about.providers';
 import { AboutInterface } from '../about.interface';
-import { environment } from 'src/environments/environment';
+import { environment } from '../../../environments/environment';
 
 
 @Component({
